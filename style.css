@@ -1,0 +1,191 @@
+*{ 
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.titulo{
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+.contendorEncriptador{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+textarea{
+    width: 650px;
+    height: 400px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    outline: none;
+    /* box-shadow: 5px 5px 30px #bebebe, -5px -5px 30px #bebebe; */
+    box-shadow: 2px 2px 20px #bebebe, -2px -2px 20px #bebebe;
+    
+}
+
+.contendorDesencriptador{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    /* overflow-x:auto; */
+    overflow-x: hidden;
+    color: #0A3871;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* background-color: #e6e7e7; */
+    box-shadow: 2px 2px 20px #bebebe, -2px -2px 20px #bebebe;
+    /* box-shadow: 5px 5px 30px #bebebe, -5px -5px 30px #bebebe; */
+}
+
+.imagen{
+    width: 250px;
+    /* margin-top: 25%; */
+    position: absolute;
+    top: 43%;
+}
+
+.botonCj2{
+    width: 100%;
+    height:40px; 
+    margin-top: 45px;
+    background-color: #0A3871;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+
+
+
+/* ############################# */
+
+.avisos{
+    display: flex;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.avisos p{
+    margin-left: 5px;
+}
+
+
+/* ############################# */
+
+.botones{
+    width: 100%;
+    height:40px; 
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.encriptar{
+    width:45%;
+    background-color: #0A3871;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+.encriptar:hover,.desencriptar:hover,.botonLimpiar:hover,.botonCj2:hover{
+    background-color: #0a56b3;
+}
+
+.desencriptar{
+    width: 45%;
+    background-color: #0A3871;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+
+.botonLimpiar{
+    width: 100%;
+    height:40px; 
+    margin-top: 5px;
+    background-color: #0A3871;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+
+/* ############################################ */
+
+@media screen and (max-width: 1045px){
+
+    body{
+        padding: 20px;
+    }
+
+    .contendorEncriptador{
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea{
+        width: 100%;
+        height: 200px;
+    }
+
+    .contendorDesencriptador{
+        width: 100%;
+        height: 200px;
+        resize: both;
+        resize:none;
+        margin-top: 15px;
+
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .botones{
+        width: 100%;
+        height:100px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* margin: 30px; */
+    }   
+
+    .encriptar,.desencriptar{
+        width: 100%;
+        height: 40px; 
+
+    }
+
+    .avisos {
+        margin: 5px auto;
+    }
+
+    .avisos p{
+        margin-left: 5px;
+    }
+    
+
+}
